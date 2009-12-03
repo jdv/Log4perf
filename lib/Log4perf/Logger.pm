@@ -73,6 +73,7 @@ sub setup_log_methods {
 
 sub set_level {
     die "unknown level: $_[1]" unless defined $_[0]->{'levels'}->{ $_[1] };
+    $_[0]->{'level'} = $_[1];
 
     for ( keys %{ $_[0]->{'levels'} } ) {
         $_[0]->{"is_$_"} =
