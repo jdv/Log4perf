@@ -65,13 +65,15 @@ sub setup_log_methods {
     }
 }
 
-=item set_level
+=item level
 
 =back
 
 =cut
 
-sub set_level {
+sub level {
+    return $_[0]->{'level'} unless $_[1];
+
     die "unknown level: $_[1]" unless defined $_[0]->{'levels'}->{ $_[1] };
     $_[0]->{'level'} = $_[1];
 

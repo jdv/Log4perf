@@ -108,7 +108,7 @@ sub setup_loggers {
 
         $logger->{'stash'} = $config->{'stash'};
 
-        $logger->set_level( $logger->{'level'} );
+        $logger->level( $logger->{'level'} );
 
         $logger->{'appenders'} =
           [ map { ref $_ ? $_ : $config->{'appenders'}->{$_}; }
