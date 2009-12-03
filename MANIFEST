@@ -1,0 +1,25 @@
+Changes
+inc/Module/Install.pm
+inc/Module/Install/AuthorTests.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+lib/Log4perf.pm
+lib/Log4perf/Appender/File.pm
+lib/Log4perf/Appender/LogDispatchAdapter.pm
+lib/Log4perf/Appender/Null.pm
+lib/Log4perf/Appender/Screen.pm
+lib/Log4perf/Appender/String.pm
+lib/Log4perf/Config.pm
+lib/Log4perf/Logger.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
+t/basic.t
+xt/pod-coverage.t
+xt/pod.t
