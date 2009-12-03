@@ -19,20 +19,9 @@ our $config = {
         fatal => 50,
         off   => 60,
     },
-    levels_by_value => {
-        0  => 'all',
-        10 => 'debug',
-        20 => 'info',
-        30 => 'warn',
-        40 => 'error',
-        50 => 'fatal',
-        60 => 'off',
-    },
     stash => {
         compute_on_logger_category => sub { $_[0]->{'category'}; },
-        compute_on_logger_level    => sub {
-            $_[0]->{'levels_by_value'}->{ $_[0]->{'level'} };
-        },
+        compute_on_logger_level    => sub { $_[0]->{'level'}; },
         compute_on_log_package      => sub { (caller)[0]; },
         compute_on_log_filename     => sub { (caller)[1]; },
         compute_on_log_line         => sub { (caller)[2]; },
